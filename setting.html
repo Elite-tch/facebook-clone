@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/4f6b9d261f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+     <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="setting.css">
+    
+    <title>Profile</title>
+    
+</head>
+<body>
+<div class="mark" >
+<div class="mark-icon">
+<a href="jchat.html" ><i class="fa fa-angle-left" aria-hidden="true"></i></a></div>
+<div class="mark-icon">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+</div>
+</div>
+
+<div class="mark-section" >
+<div class="mark-container" >
+
+
+<div class="mark-bg" >
+
+<div id="dark-btn"  >
+<span></span>
+</div>
+<div class="settings-menu">
+      <div class="settings-img">
+      <img src="profile-pic.png"></div>
+      <div class="settings-text">
+      <h4>Johnson Nico</h4>
+      <a href="" >See your profile</a>
+     </div></div>
+      <hr>
+      
+      <div class="settings-menu">
+      <div class="settings-img">
+      <img src="feedback.png"></div>
+      <div class="settings-text">
+      <h4>Give Feedback</h4>
+      <a href="" >Give us a feedback</a>
+      </div></div>
+      <hr>
+
+
+
+<div class="news-img">
+<img src="news.png" >
+<p>Latest News</p>
+</div>
+
+<div class="news-img">
+<img src="marketplace.png" >
+<p>Marketplace</p>
+</div>
+
+<div class="news-img">
+<img src="friends.png" >
+<p>Friends</p>
+</div>
+
+<div class="news-img">
+<img src="group.png" >
+<p>Groups</p>
+</div>
+
+<div class="news-img">
+<img src="watch.png" >
+<p>Watch</p>
+</div>
+<div class="news-a" ><a href="" >See more</a>
+</div>
+<hr>
+
+<div class="short" >
+<h4>Your Shortcut</h4>
+<div class="short-img" >
+<img src="shortcut-4.png">
+<p>Website Expert</p></div>
+
+<div class="short-img" >
+<img src="shortcut-2.png">
+<p>Web Desing Course</p></div>
+
+<div class="short-img" >
+<img src="shortcut-3.png">
+<p>Web Developer</p></div>
+
+<div class="short-img" >
+<img src="shortcut-1.png">
+<p>Full Stack Development</p></div>
+
+</div></div>
+</div>
+
+<div class="mark-content" >
+
+<div class="event-bg" >
+<div class="event" >
+<h4>Events</h4>
+<a href="" >See All</a>
+</div>
+<div class="event-text" >
+<div class="event-row" >
+<h3>28 <br>Nov</h3>
+</div>
+<div class="event-column">
+<h5>Social Media</h5>
+<div class="location" >
+<img src="location.png" > East Region</div>
+<a href="" > More Info</a>
+</div></div>
+
+<div class="event-text" >
+<div class="event-row" >
+<h3>18 <br>June</h3>
+</div>
+<div class="event-column">
+<h5>Mobile Marketing</h5>
+<div class="location" >
+<img src="location.png" >North Central</div>
+<a href="" > More Info</a>
+</div>
+</div>
+<hr>
+<div class="advert" >
+<h4>Advertisement</h4>
+<a href="" >Close</a>
+</div>
+<div class="advert-img" >
+<img src="advertisement.png" >
+</div>
+
+<div class="conver">
+<h4>Conversations</h4>
+<a href="" >Hide chat</a>
+</div>
+<div class="cover-list" >
+<div class="cover-img online" >
+<img src="member-3.png"   >
+Mary Ann
+</div>
+<div class="cover-img online" >
+<img src="member-2.png" >
+Ken Deo
+</div>
+<div class="cover-img online" >
+<img src="member-4.png" >
+Daniel CC
+</div></div>
+
+
+<hr>
+      <div class="privacy" >
+      <div class="privacy-img"> 
+       <img src="setting.png"> 
+       <a href="" >Settings & privacy</a></div>
+       <a href="" > <img src="arrow.png" width="10px">  </a>
+       </div>
+       
+       <div class="privacy" >
+       <div class="privacy-img"> 
+       <img src="display.png">
+       <a href="" >Display & Accesibility</a></div>
+       <a href="" > <img src="arrow.png" width="10px">  </a>
+       </div>
+       
+       <div class="privacy" >
+       <div class="privacy-img"> 
+       <img src="help.png">
+    <a href="" >Help & Support</a></div>
+   <a href="" > <img src="arrow.png" width="10px">  </a>
+       </div>
+       
+       <div class="privacy" >
+       <div class="privacy-img"> 
+       <img src="logout.png"> 
+       <a href="" >Logout</a></div>
+        <a href="" > <img src="arrow.png" width="10px">  </a>
+       </div>
+      </div> 
+</div>
+</div>
+
+<script>
+   var darkBtn = document.getElementById("dark-btn");
+   
+   darkBtn.onclick = function(){
+   darkBtn.classList.toggle("dark-btn-on");
+   document.body.classList.toggle("dark-theme");
+   
+   if(localStorage.getItem("theme") == "light"){
+   localStorage.setItem("theme", "dark");
+   }
+   else{
+   localStorage.setItem("theme", "light");
+   }
+   
+   
+   
+   }
+   
+   if(localStorage.getItem("theme") == "light"){
+   darkBtn.classList.remove("dark-btn-on");
+   document.body.classList.remove("dark-theme");
+   
+   }
+   
+   else if(localStorage.getItem("theme") == "dark"){
+   darkBtn.classList.add("dark-btn-on");
+   document.body.classList.add("dark-theme");
+   
+   }
+   
+   else{
+   localStorage.setItem("theme", "light");
+   }
+   
+   
+   
+   
+   
+   
+   
+   </script>
+   
+   
+
+
+
+
+</script>
+</body>
+</html>
